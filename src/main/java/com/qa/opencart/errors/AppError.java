@@ -2,7 +2,6 @@ package com.qa.opencart.errors;
 
 public class AppError {
 
-	//This class is used to store all the error messages which are used in the framework
 	
 	public static String TITLE_NOT_FOUND="TITLE NOT FOUND";
 	public static String URL_NOT_FOUND="URL NOT FOUND";
