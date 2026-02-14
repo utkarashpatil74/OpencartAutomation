@@ -1,0 +1,67 @@
+pipeline {
+    agent any
+
+    stages {
+        stage("Build") {
+            steps {
+                echo("Build the project")
+            }
+        }
+
+        stage("Run Security Scan") {
+            steps {
+                echo("Security testing using Burp Suite")
+            }
+        }
+
+        stage("Run Unit Tests") {
+            steps {
+                echo("Run UTs")
+            }
+        }
+
+        stage("Run Integration Tests") {
+            steps {
+                echo("Run ITs")
+            }
+        }
+
+        stage("Deploy to Dev") {
+            steps {
+                echo("Deploy to Dev environment")
+            }
+        }
+
+        stage("Deploy to QA") {
+            steps {
+                echo("Deploy to QA environment")
+            }
+        }
+
+        stage("Run Regression Test Cases on QA") {
+            steps {
+                echo("Execute regression test suite on QA")
+            }
+        }
+
+        stage("Deploy to Staging") {
+            steps {
+                echo("Deploy to Staging environment")
+            }
+        }
+
+        stage("Run Smoke Tests on Staging") {
+            steps {
+                echo("Run smoke tests on Staging")
+            }
+        }
+
+        stage("Deploy to Production") {
+            steps {
+                echo ("Deploy to Production environment")
+            }
+        }
+    }
+
+   
+}
